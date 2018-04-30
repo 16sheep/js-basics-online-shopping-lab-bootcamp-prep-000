@@ -31,7 +31,7 @@ function viewCart() {
       cartReport = `${cartReport}${cart[i]['itemName']} at $${cart[i]['itemPrice']}`
     }
     else if(i === cart.length - 1){
-      cartReport = `${cartReport} and ${cart[i]['itemName']} at ${cart[i]['itemPrice']}`
+      cartReport = `${cartReport}, and ${cart[i]['itemName']} at ${cart[i]['itemPrice']}`
     }
     else {
       cartReport = `${cartReport}, ${cart[i]['itemName']} at ${cart[i]['itemPrice']}`
