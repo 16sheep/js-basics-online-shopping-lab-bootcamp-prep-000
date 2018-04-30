@@ -28,7 +28,7 @@ function viewCart() {
   }
   for(let i = 0; i < cart.length; i++){
     if (i === 0) {
-      cartReport = `${cartReport}${cart[i]['itemName']} at ${cart[i]['itemPrice']}`
+      cartReport = `${cartReport}${cart[i]['itemName']} at $${cart[i]['itemPrice']}`
     }
     else if(i === cart.length - 1){
       cartReport = `and ${item} at ${cart[i]['itemPrice']}.`
