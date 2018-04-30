@@ -15,7 +15,7 @@ function addToCart(item) {
    return Math.floor(Math.random() * Math.floor(100));
  }
  
- object = {[itemName] : item, [itemPrice] : randomPrice()};
+ object = {itemName : item, itemPrice : randomPrice()};
  return "${item} has been added to the cart"
 }
 
