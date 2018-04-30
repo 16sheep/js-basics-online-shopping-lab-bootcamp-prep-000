@@ -17,7 +17,7 @@ function addToCart(item) {
  
  let object = {itemName : item, itemPrice : randomPrice()};
  cart.push(object)
- return "${item} has been added to the cart"
+ return "${item} has been added to your cart."
 }
 
 function viewCart() {
