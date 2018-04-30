@@ -11,14 +11,14 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- let currentItem = item
  function randomPrice () {
    return Math.floor(Math.random() * Math.floor(100));
  }
  
  let object = {itemName : item, itemPrice : randomPrice()};
  cart.push(object)
- return "${currentItem} has been added to your cart."
+ str = "${item} has been added to your cart."
+ return str
 }
 
 function viewCart() {
