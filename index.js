@@ -12,15 +12,24 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  function randomPrice () {
-   return Math.random()
+   return Math.floor(Math.random() * Math.floor(100));
  }
  
  object = {[itemName] : item, [itemPrice] : randomPrice()};
- return "${itemName} has been added to the cart"
+ return "${item} has been added to the cart"
 }
 
 function viewCart() {
-  // write your code here
+  let cartReport = "In your cart you have "
+  for(let i = 0; i < cart.length; i++){
+    if (i === 0) {
+      cartReport = "${cartreport}${item} at ${cart[i][itemPrice]}"
+    }
+    else if(i === cart.length - 1){
+      cartReport = "and ${item} at ${cart[i][itemPrice]}."
+    }
+    
+  }
 }
 
 function total() {
