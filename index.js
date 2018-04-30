@@ -17,7 +17,7 @@ function addToCart(item) {
  
  let object = {itemName : item, itemPrice : randomPrice()};
  cart.push(object)
- let str = "${item} has been added to your cart."
+ let str = '${item} has been added to your cart.'
  return str
 }
 
