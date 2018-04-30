@@ -11,8 +11,12 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- item = {};
- return "()"
+ function randomPrice () {
+   
+ }
+ 
+ object = {[itemName] : item, [itemPrice] : randomPrice()};
+ return "${itemName} has been added to the cart"
 }
 
 function viewCart() {
