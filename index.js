@@ -31,10 +31,10 @@ function viewCart() {
       cartReport = `${cartReport}${cart[i]['itemName']} at $${cart[i]['itemPrice']}.`
     }
     else if(i === cart.length - 1){
-      cartReport = `and ${item} at ${cart[i]['itemPrice']}.`
+      cartReport = `and ${cart[i]['itemName']} at ${cart[i]['itemPrice']}.`
     }
     else {
-      cartReport = `, ${item} at ${cart[i]['itemPrice']}`
+      cartReport = `, ${cart[i]['itemName']} at ${cart[i]['itemPrice']}`
     }
   }
   return cartReport
