@@ -28,13 +28,13 @@ function viewCart() {
   }
   for(let i = 0; i < cart.length; i++){
     if (i === 0) {
-      cartReport = "${cartreport}${item} at ${cart[i]['itemPrice']}"
+      cartReport = `${cartreport}${item} at ${cart[i]['itemPrice']}`
     }
     else if(i === cart.length - 1){
-      cartReport = "and ${item} at ${cart[i]['itemPrice']}."
+      cartReport = `and ${item} at ${cart[i]['itemPrice']}.`
     }
     else {
-      cartReport = ", ${item} at ${cart[i]['itemPrice']}"
+      cartReport = `, ${item} at ${cart[i]['itemPrice']}`
     }
   }
   return cartReport
@@ -65,5 +65,5 @@ function placeOrder(cardNumber) {
   }
   sum = total();
   cart.length = 0
-  return "Your total cost is ${sum}, which will be charged to the card ${cardNumber}."
+  return `Your total cost is ${sum}, which will be charged to the card ${cardNumber}.`
 }
